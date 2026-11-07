@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joelson Ferreira — Dados e IA</title>
+<meta name="description" content="Joelson Ferreira: Analista de Redes na RNP e Cientista de Dados. Dados, IA, observabilidade e AIOps com mais de 20 anos de experiência em infraestrutura de TI. Natal, RN.">
+<meta property="og:title" content="Joelson Ferreira — Dados e IA">
+<meta property="og:description" content="Dados e IA com quem conhece a infraestrutura por dentro.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.joelsonferreira.com.br/">
+<meta property="og:image" content="https://www.joelsonferreira.com.br/foto-joelson.jpg">
+<link rel="canonical" href="https://www.joelsonferreira.com.br/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231D4ED8'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-weight='700' font-size='28' fill='white' text-anchor='middle'%3EJF%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0;background:#F7F9FC;font-family:Inter,system-ui,sans-serif;color:#0F172A}
+a{color:#1D4ED8}a:hover{color:#1E3A8A}
+@keyframes jf-flow{to{stroke-dashoffset:-24}}
+@keyframes jf-pulse{0%{opacity:.55;transform:scale(1)}100%{opacity:0;transform:scale(2.4)}}
+@keyframes jf-bar{0%,100%{transform:scaleY(.35)}50%{transform:scaleY(1)}}
+@keyframes jf-blink{50%{opacity:.25}}
+@keyframes jf-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes jf-dash{to{background-position:24px 0}}
+.jf-grid4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.jf-card{transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease}
+.jf-card:hover,.jf-card:focus-visible{transform:translateY(-4px);box-shadow:0 10px 24px rgba(15,23,42,0.08);border-color:#BFDBFE !important}
+@media (max-width: 1100px){.jf-grid4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width: 600px){.jf-grid4{grid-template-columns:minmax(0,1fr)}}
+.jf-just{text-align:justify;hyphens:none;-webkit-hyphens:none}
+@media (max-width: 600px){.jf-just{text-align:left}}
+@media (max-width: 900px){.jf-traffic{left:12px !important}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+</style>
+<style>html{scroll-behavior:smooth}html,body{overflow-x:hidden}</style>
+</head>
+<body>
+<div style="background: #F7F9FC; color: #0F172A; font-family: Inter, system-ui, sans-serif; font-size: 17px; line-height: 1.6; min-height: 100vh">
+
+<!-- NAV -->
+<header style="background: #FFFFFF; border-bottom: 1px solid #E5EAF2">
+<div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#topo" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #0F172A">
+<span style="width: 40px; height: 40px; border-radius: 12px; background: #1D4ED8; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 16px; color: #FFFFFF">JF</span>
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 18px">Joelson Ferreira</span>
+</a>
+<nav aria-label="Principal" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-size: 15px">
+<a href="#sobre" style="color: #334155; text-decoration: none">Sobre</a>
+<a href="#servicos" style="color: #334155; text-decoration: none">Serviços</a>
+<a href="#trajetoria" style="color: #334155; text-decoration: none">Trajetória</a>
+<a href="#projetos" style="color: #334155; text-decoration: none">Projetos</a>
+<a class="jf-card" href="#contato" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border-radius: 999px; background: #0F172A; color: #FFFFFF; font-weight: 600; text-decoration: none">Fale comigo</a>
+</nav>
+</div>
+</header>
+
+<!-- HERO -->
+<section id="topo" style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 64px; display: flex; flex-wrap: wrap; align-items: flex-end; gap: 56px">
+<div style="flex: 999 1 500px; min-width: 0; display: flex; flex-direction: column; gap: 26px">
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<span style="padding: 6px 12px; border-radius: 999px; background: #DBEAFE; color: #1E3A8A; font-size: 13px; font-weight: 600">Ciência de Dados</span>
+<span style="padding: 6px 12px; border-radius: 999px; background: #CCFBF1; color: #115E59; font-size: 13px; font-weight: 600">Inteligência Artificial</span>
+<span style="padding: 6px 12px; border-radius: 999px; background: #FFEDD5; color: #9A3412; font-size: 13px; font-weight: 600">Redes e Infraestrutura</span>
+<span style="padding: 6px 12px; border-radius: 999px; background: #EDE9FE; color: #5B21B6; font-size: 13px; font-weight: 600">Observabilidade</span>
+</div>
+<h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(40px, 5.2vw, 62px); line-height: 1.05; letter-spacing: -0.02em; color: #0F172A">Dados e IA com quem conhece a <span style="color: #1D4ED8">infraestrutura</span> por dentro.</h1>
+<p class="jf-just" style="margin: 0; max-width: 600px; font-size: 19px; color: #475569">Sou Joelson Ferreira, Analista de Redes na RNP e Cientista de Dados. Uno mais de 20 anos de infraestrutura de TI à ciência de dados para transformar métricas em decisões, com foco em observabilidade e AIOps.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a class="jf-card" href="#contato" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; border-radius: 999px; background: #1D4ED8; color: #FFFFFF; font-weight: 600; text-decoration: none">Agendar uma conversa</a>
+<a class="jf-card" href="https://www.linkedin.com/in/joelsonferreira/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 28px; border-radius: 999px; border: 1px solid #CBD5E1; background: #FFFFFF; color: #0F172A; font-weight: 500; text-decoration: none"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"></path></svg>Ver perfil no LinkedIn</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<div style="flex: 1 1 140px; background: #FFFFFF; border: 1px solid #E5EAF2; border-radius: 16px; padding: 16px 18px"><p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 700; color: #1D4ED8">20+</p><p style="margin: 0; font-size: 14px; color: #475569">anos em TI</p></div>
+<div style="flex: 1 1 140px; background: #FFFFFF; border: 1px solid #E5EAF2; border-radius: 16px; padding: 16px 18px"><p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 700; color: #0F766E">3</p><p style="margin: 0; font-size: 14px; color: #475569">graduações</p></div>
+<div style="flex: 1 1 140px; background: #FFFFFF; border: 1px solid #E5EAF2; border-radius: 16px; padding: 16px 18px"><p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 700; color: #C2410C">3</p><p style="margin: 0; font-size: 14px; color: #475569">especializações</p></div>
+</div>
+</div>
+
+<!-- hero visual: foto + widgets animados -->
+<div style="flex: 1 1 380px; min-width: 0; position: relative; padding: 24px 0 72px 0">
+<div style="position: relative; max-width: 420px; margin: 0">
+<div style="position: absolute; inset: -14px 28px 28px -14px; border-radius: 32px; background: #DBEAFE"></div>
+<div style="position: absolute; inset: 28px -14px -14px 28px; border-radius: 32px; background: #CCFBF1"></div>
+<img src="foto-joelson.jpg" alt="Foto de Joelson Ferreira" style="position: relative; display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; border-radius: 28px; border: 6px solid #FFFFFF; box-sizing: border-box">
+
+<!-- widget: tráfego ao vivo -->
+<div class="jf-traffic" style="position: absolute; left: -40px; bottom: -72px; width: 236px; background: rgba(255,255,255,0.68); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.75); border-radius: 16px; padding: 14px 16px; box-shadow: 0 12px 32px rgba(15,23,42,0.14); animation: jf-float 6s ease-in-out infinite">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px">
+<span style="font-size: 12px; font-weight: 600; color: #0F172A">Tráfego de rede</span>
+<span style="display: flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 600; color: #0F766E" id="jf-status"><span style="width: 7px; height: 7px; border-radius: 50%; background: currentColor; animation: jf-blink 1.2s infinite"></span><span id="jf-status-text">Normal</span></span>
+</div>
+<p style="margin: 0 0 4px; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700; color: #0F172A"><span id="jf-mbps">450</span> <span style="font-size: 12px; font-weight: 500; color: #64748B">Mbps</span></p>
+<svg viewBox="0 0 320 120" width="100%" height="70" preserveAspectRatio="none" role="img" aria-label="Gráfico animado de tráfego de rede com detecção de anomalias">
+<path id="jf-area" d="" fill="#DBEAFE"></path>
+<polyline id="jf-line" points="" fill="none" stroke="#1D4ED8" stroke-width="3" stroke-linejoin="round"></polyline>
+<line x1="0" y1="34" x2="320" y2="34" stroke="#EA580C" stroke-width="1.5" stroke-dasharray="6 6"></line>
+<g id="jf-anom" style="display: none">
+<circle cx="0" cy="0" class="jf-anom-pt" r="7" fill="#EA580C"></circle>
+<circle cx="0" cy="0" class="jf-anom-pt" r="7" fill="none" stroke="#EA580C" stroke-width="2" style="transform-box: fill-box; transform-origin: center; animation: jf-pulse 1.4s ease-out infinite"></circle>
+</g>
+</svg>
+<p style="margin: 4px 0 0; font-size: 10px; color: #64748B">demonstração · dados simulados</p>
+</div>
+
+<!-- widget: barras -->
+<div style="position: absolute; right: -28px; top: 40px; background: rgba(255,255,255,0.68); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.75); border-radius: 16px; padding: 14px 16px; box-shadow: 0 12px 32px rgba(15,23,42,0.14); animation: jf-float 7s ease-in-out infinite 1s">
+<p style="margin: 0 0 8px; font-size: 12px; font-weight: 600; color: #0F172A">Modelos</p>
+<div style="display: flex; align-items: flex-end; gap: 6px; height: 56px" aria-hidden="true">
+<span style="width: 12px; height: 56px; border-radius: 4px; background: #1D4ED8; transform-origin: bottom; animation: jf-bar 2.4s ease-in-out infinite"></span>
+<span style="width: 12px; height: 56px; border-radius: 4px; background: #0D9488; transform-origin: bottom; animation: jf-bar 2.4s ease-in-out infinite .3s"></span>
+<span style="width: 12px; height: 56px; border-radius: 4px; background: #F59E0B; transform-origin: bottom; animation: jf-bar 2.4s ease-in-out infinite .6s"></span>
+<span style="width: 12px; height: 56px; border-radius: 4px; background: #7C3AED; transform-origin: bottom; animation: jf-bar 2.4s ease-in-out infinite .9s"></span>
+<span style="width: 12px; height: 56px; border-radius: 4px; background: #EA580C; transform-origin: bottom; animation: jf-bar 2.4s ease-in-out infinite 1.2s"></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- DA REDE AO INSIGHT -->
+<section style="background: #FFFFFF; border-top: 1px solid #E5EAF2; border-bottom: 1px solid #E5EAF2">
+<div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 48px; margin-bottom: 40px">
+<div>
+<p style="margin: 0 0 10px; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; color: #1D4ED8">meu diferencial</p>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 38px; line-height: 1.1; color: #0F172A">Da rede ao insight.</h2>
+</div>
+<p style="margin: 0; max-width: 460px; color: #475569">Conheço cada camada do caminho: de onde os dados nascem, nos equipamentos e servidores, até a decisão que eles apoiam.</p>
+</div>
+<div class="jf-grid4" style="display: grid; gap: 12px">
+<div style="flex: 1 1 200px; min-width: 0; border-radius: 20px; background: #FFF7ED; border: 1px solid #FED7AA; padding: 24px">
+<svg width="56" height="40" viewBox="0 0 56 40" aria-hidden="true">
+<line x1="8" y1="20" x2="28" y2="8" stroke="#EA580C" stroke-width="2" stroke-dasharray="4 4" style="animation: jf-flow 1s linear infinite"></line>
+<line x1="8" y1="20" x2="28" y2="32" stroke="#EA580C" stroke-width="2" stroke-dasharray="4 4" style="animation: jf-flow 1s linear infinite"></line>
+<line x1="28" y1="8" x2="48" y2="20" stroke="#EA580C" stroke-width="2" stroke-dasharray="4 4" style="animation: jf-flow 1s linear infinite"></line>
+<line x1="28" y1="32" x2="48" y2="20" stroke="#EA580C" stroke-width="2" stroke-dasharray="4 4" style="animation: jf-flow 1s linear infinite"></line>
+<circle cx="8" cy="20" r="5" fill="#EA580C"></circle><circle cx="28" cy="8" r="5" fill="#EA580C"></circle><circle cx="28" cy="32" r="5" fill="#EA580C"></circle><circle cx="48" cy="20" r="5" fill="#EA580C"></circle>
+</svg>
+<p style="margin: 12px 0 2px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #9A3412">01 · infraestrutura</p>
+<h3 style="margin: 0 0 6px; font-family: 'Space Grotesk', sans-serif; font-size: 20px; color: #0F172A">Coleta na origem</h3>
+<p style="margin: 0; font-size: 15px; color: #475569">Redes, servidores, Zabbix, SNMP e logs.</p>
+</div>
+<div style="flex: 1 1 200px; min-width: 0; border-radius: 20px; background: #EFF6FF; border: 1px solid #BFDBFE; padding: 24px">
+<svg width="56" height="40" viewBox="0 0 56 40" aria-hidden="true"><rect x="4" y="4" width="48" height="8" rx="2" fill="#1D4ED8"></rect><rect x="4" y="16" width="34" height="8" rx="2" fill="#60A5FA"></rect><rect x="4" y="28" width="42" height="8" rx="2" fill="#93C5FD"></rect></svg>
+<p style="margin: 12px 0 2px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #1E40AF">02 · dados</p>
+<h3 style="margin: 0 0 6px; font-family: 'Space Grotesk', sans-serif; font-size: 20px; color: #0F172A">Tratamento</h3>
+<p style="margin: 0; font-size: 15px; color: #475569">Python, SQL, limpeza e pipelines ETL.</p>
+</div>
+<div style="flex: 1 1 200px; min-width: 0; border-radius: 20px; background: #F5F3FF; border: 1px solid #DDD6FE; padding: 24px">
+<svg width="56" height="40" viewBox="0 0 56 40" aria-hidden="true"><path d="M4 36 C 16 36, 18 6, 28 6 S 40 36, 52 36" fill="none" stroke="#7C3AED" stroke-width="3"></path><circle cx="12" cy="30" r="3" fill="#A78BFA"></circle><circle cx="22" cy="14" r="3" fill="#A78BFA"></circle><circle cx="34" cy="12" r="3" fill="#A78BFA"></circle><circle cx="44" cy="30" r="3" fill="#A78BFA"></circle></svg>
+<p style="margin: 12px 0 2px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5B21B6">03 · modelos</p>
+<h3 style="margin: 0 0 6px; font-family: 'Space Grotesk', sans-serif; font-size: 20px; color: #0F172A">Estatística e ML</h3>
+<p style="margin: 0; font-size: 15px; color: #475569">Padrões, previsões e anomalias.</p>
+</div>
+<div style="flex: 1 1 200px; min-width: 0; border-radius: 20px; background: #F0FDFA; border: 1px solid #99F6E4; padding: 24px">
+<svg width="56" height="40" viewBox="0 0 56 40" aria-hidden="true"><rect x="4" y="22" width="9" height="14" rx="2" fill="#5EEAD4"></rect><rect x="17" y="14" width="9" height="22" rx="2" fill="#2DD4BF"></rect><rect x="30" y="8" width="9" height="28" rx="2" fill="#14B8A6"></rect><rect x="43" y="2" width="9" height="34" rx="2" fill="#0F766E"></rect></svg>
+<p style="margin: 12px 0 2px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #115E59">04 · decisão</p>
+<h3 style="margin: 0 0 6px; font-family: 'Space Grotesk', sans-serif; font-size: 20px; color: #0F172A">Insight e ação</h3>
+<p style="margin: 0; font-size: 15px; color: #475569">Dashboards, relatórios e alertas inteligentes.</p>
+</div>
+</div>
+<div aria-hidden="true" style="height: 4px; margin-top: 20px; border-radius: 2px; background-image: linear-gradient(90deg, #EA580C 0 12px, transparent 12px 24px); background-size: 24px 4px; animation: jf-dash 0.8s linear infinite; opacity: 0.6"></div>
+</div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 48px">
+<div style="flex: 1 1 280px; min-width: 0">
+<p style="margin: 0 0 10px; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; color: #0F766E">sobre</p>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 38px; line-height: 1.1; color: #0F172A">Tudo começou com uma decisão da minha avó.</h2>
+</div>
+<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 18px; color: #475569; font-size: 18px">
+<p class="jf-just" style="margin: 0">Minha avó me matriculou em um curso de Operador de Computador e foi amor à primeira vista pela tecnologia.</p>
+<p class="jf-just" style="margin: 0">Desde então, passei por equipes de suporte, administração de sistemas Windows e Linux, redes e infraestrutura em empresas privadas e públicas. Hoje sou Analista de Redes no PoP-RN da Rede Nacional de Ensino e Pesquisa (RNP) e também no Núcleo de Redes Avançadas da UFRN (NuRA).</p>
+<p class="jf-just" style="margin: 0">Nos últimos anos, levei essa experiência para a ciência de dados: concluí duas formações em dados pela Ada Tech (Santander Coders e Diversidade Tech), duas especializações, em Ciência de Dados e IA e em Estrutura e Gestão de Redes de Computadores, e sigo me especializando no IFRN. Meu interesse está onde as duas áreas se encontram: <strong style="color: #0F172A; font-weight: 600">observabilidade, análise inteligente de dados e IA aplicada à infraestrutura.</strong></p>
+</div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" style="background: #FFFFFF; border-top: 1px solid #E5EAF2; border-bottom: 1px solid #E5EAF2">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px">
+<p style="margin: 0 0 10px; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; color: #7C3AED">como posso ajudar</p>
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 48px; margin-bottom: 40px">
+<h2 style="margin: 0; max-width: 620px; font-family: 'Space Grotesk', sans-serif; font-size: 38px; line-height: 1.1; color: #0F172A">Do dado bruto à decisão, com os pés na infraestrutura real.</h2>
+<p style="margin: 0; max-width: 420px; color: #475569">Para empresas que querem extrair valor dos próprios dados, e para times que procuram um profissional de dados que entende redes, servidores e operação.</p>
+</div>
+<div class="jf-grid4" style="display: grid; gap: 20px">
+<div style="background: #FFFFFF; border: 1px solid #E5EAF2; border-top: 4px solid #1D4ED8; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<span style="width: 48px; height: 48px; border-radius: 14px; background: #DBEAFE; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1D4ED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"></path><path d="M7 15l4-4 3 3 5-6"></path></svg></span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 21px; color: #0F172A">Análise e visualização</h3>
+<p style="margin: 0; font-size: 16px; color: #475569">Dashboards em Power BI, indicadores e relatórios que respondem às perguntas do negócio.</p>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E5EAF2; border-top: 4px solid #7C3AED; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<span style="width: 48px; height: 48px; border-radius: 14px; background: #EDE9FE; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="2.5"></circle><circle cx="18" cy="6" r="2.5"></circle><circle cx="12" cy="18" r="2.5"></circle><path d="M8 7.5l3 8M16 7.5l-3 8M8.5 6h7"></path></svg></span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 21px; color: #0F172A">Ciência de dados e ML</h3>
+<p style="margin: 0; font-size: 16px; color: #475569">Modelos de classificação e previsão em Python, com estatística aplicada e validação.</p>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E5EAF2; border-top: 4px solid #0D9488; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<span style="width: 48px; height: 48px; border-radius: 14px; background: #CCFBF1; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0F766E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12h4l3-8 4 16 3-8h6"></path></svg></span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 21px; color: #0F172A">Observabilidade e AIOps</h3>
+<p style="margin: 0; font-size: 16px; color: #475569">Métricas de rede e infraestrutura, detecção de anomalias e alertas mais inteligentes.</p>
+<span style="align-self: flex-start; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #CCFBF1; color: #115E59">diferencial</span>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E5EAF2; border-top: 4px solid #EA580C; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<span style="width: 48px; height: 48px; border-radius: 14px; background: #FFEDD5; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C2410C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1.5"></rect><rect x="3" y="14" width="18" height="6" rx="1.5"></rect><path d="M7 7h.01M7 17h.01"></path></svg></span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 21px; color: #0F172A">Infraestrutura e automação</h3>
+<p style="margin: 0; font-size: 16px; color: #475569">Linux, Windows Server, Active Directory, Samba 4, Zabbix, Docker e Ansible, do projeto à operação.</p>
+</div>
+</div>
+<div aria-hidden="true" style="height: 4px; margin-top: 20px; border-radius: 2px; background-image: linear-gradient(90deg, #EA580C 0 12px, transparent 12px 24px); background-size: 24px 4px; animation: jf-dash 0.8s linear infinite; opacity: 0.6"></div>
+</div>
+</section>
+
+<!-- TRAJETÓRIA -->
+<section id="trajetoria" style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 48px">
+<div style="flex: 1 1 280px; min-width: 0">
+<p style="margin: 0 0 10px; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; color: #C2410C">trajetória</p>
+<h2 style="margin: 0 0 16px; font-family: 'Space Grotesk', sans-serif; font-size: 38px; line-height: 1.1; color: #0F172A">De operador de micro a cientista de dados.</h2>
+<p style="margin: 0; color: #475569">Mais de duas décadas construindo e mantendo infraestrutura, agora somadas à formação em dados e IA.</p>
+</div>
+<ol style="flex: 999 1 560px; min-width: 0; list-style: none; margin: 0; padding: 0 0 0 28px; border-left: 2px solid #E2E8F0; display: flex; flex-direction: column; gap: 28px">
+<li style="position: relative">
+<span style="position: absolute; left: -37px; top: 5px; width: 16px; height: 16px; border-radius: 50%; background: #1D4ED8; box-shadow: 0 0 0 4px #DBEAFE"></span>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; color: #1D4ED8">2025 — hoje</p>
+<h3 style="margin: 2px 0 4px; font-family: 'Space Grotesk', sans-serif; font-size: 20px; color: #0F172A">Analista de Redes · RNP (PoP-RN) e NuRA-UFRN</h3>
+<p style="margin: 0; font-size: 16px; color: #475569">Equipe de Infraestrutura de Redes da Rede Nacional de Ensino e Pesquisa, atuando também no Núcleo de Redes Avançadas da UFRN.</p>
+</li>
+<li style="position: relative">
+<span style="position: absolute; left: -35px; top: 7px; width: 12px; height: 12px; border-radius: 50%; background: #0D9488"></span>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #64748B">2021 — 2025</p>
+<h3 style="margin: 2px 0 4px; font-family: 'Space Grotesk', sans-serif; font-size: 20px; color: #0F172A">Analista de Redes · STI-UFRN</h3>
+<p style="margin: 0; font-size: 16px; color: #475569">Responsável técnico pelos Active Directory administrativo e acadêmico (Samba 4), corresponsável pelo Google Workspace e integração com os sistemas SIG.</p>
+</li>
+<li style="position: relative">
+<span style="position: absolute; left: -35px; top: 7px; width: 12px; height: 12px; border-radius: 50%; background: #7C3AED"></span>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #64748B">2024</p>
+<h3 style="margin: 2px 0 4px; font-family: 'Space Grotesk', sans-serif; font-size: 20px; color: #0F172A">Embaixador Ada Tech</h3>
+<p style="margin: 0; font-size: 16px; color: #475569">Selecionado nacionalmente para divulgar formação gratuita em tecnologia e empregabilidade.</p>
+</li>
+<li style="position: relative">
+<span style="position: absolute; left: -35px; top: 7px; width: 12px; height: 12px; border-radius: 50%; background: #7C3AED"></span>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #64748B">2023</p>
+<h3 style="margin: 2px 0 4px; font-family: 'Space Grotesk', sans-serif; font-size: 20px; color: #0F172A">Santander Coders e Diversidade Tech</h3>
+<p style="margin: 0; font-size: 16px; color: #475569">Formações em Data Science e Data Analytics pela Ada Tech, após duas seleções nacionais.</p>
+</li>
+<li style="position: relative">
+<span style="position: absolute; left: -35px; top: 7px; width: 12px; height: 12px; border-radius: 50%; background: #EA580C"></span>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #64748B">2017 — 2021</p>
+<h3 style="margin: 2px 0 4px; font-family: 'Space Grotesk', sans-serif; font-size: 20px; color: #0F172A">Técnico em TI · Aliança Tecnologia</h3>
+<p style="margin: 0; font-size: 16px; color: #475569">Suporte corporativo em VMware e Fortigate, monitoramento com Zabbix, backups com Veeam.</p>
+</li>
+<li style="position: relative">
+<span style="position: absolute; left: -35px; top: 7px; width: 12px; height: 12px; border-radius: 50%; background: #EA580C"></span>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #64748B">2007 — 2015</p>
+<h3 style="margin: 2px 0 4px; font-family: 'Space Grotesk', sans-serif; font-size: 20px; color: #0F172A">Administrador de Sistemas e Redes · Bonor</h3>
+<p style="margin: 0; font-size: 16px; color: #475569">Projetos de rede e cabeamento, servidores Windows e Linux, Active Directory e backups.</p>
+</li>
+<li style="position: relative">
+<span style="position: absolute; left: -35px; top: 7px; width: 12px; height: 12px; border-radius: 50%; background: #F59E0B"></span>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #64748B">2005</p>
+<h3 style="margin: 2px 0 4px; font-family: 'Space Grotesk', sans-serif; font-size: 20px; color: #0F172A">Operador de Microcomputador</h3>
+<p style="margin: 0; font-size: 16px; color: #475569">Onde tudo começou.</p>
+</li>
+</ol>
+</section>
+
+<!-- PROJETOS -->
+<section id="projetos" style="background: #FFFFFF; border-top: 1px solid #E5EAF2; border-bottom: 1px solid #E5EAF2">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px">
+<p style="margin: 0 0 10px; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; color: #1D4ED8">projetos</p>
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 40px">
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 38px; line-height: 1.1; color: #0F172A">Projetos selecionados</h2>
+<a href="https://github.com/Joelson-Ferreira" style="display: inline-flex; align-items: center; min-height: 44px; font-weight: 600">Ver todos no GitHub →</a>
+</div>
+<div class="jf-grid4" style="display: grid; gap: 20px">
+<a class="jf-card" href="https://github.com/Joelson-Ferreira/SantanderCoders2023-MachineLearning1" style="text-decoration: none; background: #FFFFFF; border: 1px solid #E5EAF2; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column">
+<div style="height: 150px; background: #F5F3FF; display: flex; align-items: center; justify-content: center">
+<svg width="160" height="100" viewBox="0 0 160 100" aria-hidden="true"><circle cx="30" cy="30" r="6" fill="#7C3AED"></circle><circle cx="48" cy="22" r="6" fill="#7C3AED"></circle><circle cx="40" cy="44" r="6" fill="#7C3AED"></circle><circle cx="58" cy="38" r="6" fill="#7C3AED"></circle><circle cx="104" cy="64" r="6" fill="#F59E0B"></circle><circle cx="122" cy="72" r="6" fill="#F59E0B"></circle><circle cx="112" cy="82" r="6" fill="#F59E0B"></circle><circle cx="130" cy="58" r="6" fill="#F59E0B"></circle><line x1="20" y1="90" x2="150" y2="10" stroke="#94A3B8" stroke-width="2" stroke-dasharray="5 5"></line></svg>
+</div>
+<div style="padding: 22px 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 20px; color: #0F172A">Machine Learning I</h3>
+<p style="margin: 0; font-size: 15px; color: #475569">Projeto final do módulo de Machine Learning do Santander Coders 2023.</p>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5B21B6">Python · scikit-learn · Jupyter</p>
+</div>
+</a>
+<a class="jf-card" href="https://github.com/Joelson-Ferreira/SantanderCoders2023-Estatistica1" style="text-decoration: none; background: #FFFFFF; border: 1px solid #E5EAF2; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column">
+<div style="height: 150px; background: #F0FDFA; display: flex; align-items: center; justify-content: center">
+<svg width="160" height="100" viewBox="0 0 160 100" aria-hidden="true"><rect x="14" y="70" width="14" height="20" rx="2" fill="#99F6E4"></rect><rect x="32" y="50" width="14" height="40" rx="2" fill="#5EEAD4"></rect><rect x="50" y="26" width="14" height="64" rx="2" fill="#14B8A6"></rect><rect x="68" y="14" width="14" height="76" rx="2" fill="#0F766E"></rect><rect x="86" y="30" width="14" height="60" rx="2" fill="#14B8A6"></rect><rect x="104" y="52" width="14" height="38" rx="2" fill="#5EEAD4"></rect><rect x="122" y="72" width="14" height="18" rx="2" fill="#99F6E4"></rect><path d="M14 86 C 50 86, 55 12, 75 12 S 100 86, 140 86" fill="none" stroke="#EA580C" stroke-width="2.5"></path></svg>
+</div>
+<div style="padding: 22px 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 20px; color: #0F172A">Estatística I</h3>
+<p style="margin: 0; font-size: 15px; color: #475569">Análise estatística aplicada, projeto final do módulo do Santander Coders 2023.</p>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #115E59">Python · Pandas · Estatística</p>
+</div>
+</a>
+<a class="jf-card" href="https://github.com/Joelson-Ferreira/PowerBI-DashboardGoogleAnalytics" style="text-decoration: none; background: #FFFFFF; border: 1px solid #E5EAF2; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column">
+<div style="height: 150px; background: #FFFBEB; display: flex; align-items: center; justify-content: center">
+<svg width="160" height="100" viewBox="0 0 160 100" aria-hidden="true"><rect x="8" y="8" width="66" height="36" rx="6" fill="#FFFFFF" stroke="#FCD34D"></rect><rect x="16" y="16" width="30" height="6" rx="3" fill="#F59E0B"></rect><rect x="16" y="28" width="44" height="8" rx="3" fill="#FDE68A"></rect><rect x="84" y="8" width="68" height="36" rx="6" fill="#FFFFFF" stroke="#FCD34D"></rect><circle cx="104" cy="26" r="11" fill="none" stroke="#1D4ED8" stroke-width="6" stroke-dasharray="45 70"></circle><rect x="122" y="20" width="22" height="5" rx="2" fill="#93C5FD"></rect><rect x="122" y="29" width="16" height="5" rx="2" fill="#BFDBFE"></rect><rect x="8" y="52" width="144" height="40" rx="6" fill="#FFFFFF" stroke="#FCD34D"></rect><polyline points="16,82 36,72 56,76 76,62 96,66 116,58 144,62" fill="none" stroke="#EA580C" stroke-width="2.5"></polyline></svg>
+</div>
+<div style="padding: 22px 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 20px; color: #0F172A">Dashboard Google Analytics</h3>
+<p style="margin: 0; font-size: 15px; color: #475569">Painel em Power BI com a análise de dados de acesso do Google Analytics.</p>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #92400E">Power BI · DAX</p>
+</div>
+</a>
+<div style="border: 2px dashed #99F6E4; background: #F0FDFA; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; justify-content: center; gap: 10px">
+<span style="align-self: flex-start; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #CCFBF1; color: #115E59">em breve</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 20px; color: #0F172A">Detecção de anomalias em métricas de rede</h3>
+<p style="margin: 0; font-size: 15px; color: #475569">[Projeto de observabilidade unindo infraestrutura e machine learning.]</p>
+</div>
+</div>
+<div aria-hidden="true" style="height: 4px; margin-top: 20px; border-radius: 2px; background-image: linear-gradient(90deg, #EA580C 0 12px, transparent 12px 24px); background-size: 24px 4px; animation: jf-dash 0.8s linear infinite; opacity: 0.6"></div>
+</div>
+</section>
+
+<!-- FORMAÇÃO E COMPETÊNCIAS -->
+<section style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 56px">
+<div style="flex: 1 1 460px; min-width: 0">
+<p style="margin: 0 0 10px; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; color: #0F766E">formação</p>
+<h2 style="margin: 0 0 28px; font-family: 'Space Grotesk', sans-serif; font-size: 32px; color: #0F172A">Formação acadêmica</h2>
+<p style="margin: 0 0 10px; font-size: 14px; font-weight: 600; color: #0F172A">Graduações</p>
+<ul style="list-style: none; margin: 0 0 24px; padding: 0; display: flex; flex-direction: column; gap: 12px">
+<li style="background: #FFFFFF; border: 1px solid #E5EAF2; border-left: 4px solid #7C3AED; border-radius: 12px; padding: 14px 18px"><p style="margin: 0; font-weight: 600; color: #0F172A">Tecnologia em Aprendizagem de Máquina</p><p style="margin: 0; font-size: 15px; color: #475569">IFRN · em andamento (2026–2028)</p></li>
+<li style="background: #FFFFFF; border: 1px solid #E5EAF2; border-left: 4px solid #0D9488; border-radius: 12px; padding: 14px 18px"><p style="margin: 0; font-weight: 600; color: #0F172A">Bacharelado em Ciências e Tecnologia</p><p style="margin: 0; font-size: 15px; color: #475569">UFRN · 2023</p></li>
+<li style="background: #FFFFFF; border: 1px solid #E5EAF2; border-left: 4px solid #EA580C; border-radius: 12px; padding: 14px 18px"><p style="margin: 0; font-weight: 600; color: #0F172A">Tecnologia em Redes de Computadores</p><p style="margin: 0; font-size: 15px; color: #475569">Estácio · 2013</p></li>
+</ul>
+<p style="margin: 0 0 10px; font-size: 14px; font-weight: 600; color: #0F172A">Especializações</p>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px">
+<li style="background: #FFFFFF; border: 1px solid #E5EAF2; border-left: 4px solid #1D4ED8; border-radius: 12px; padding: 14px 18px"><p style="margin: 0; font-weight: 600; color: #0F172A">Especialização em Ciência de Dados</p><p style="margin: 0; font-size: 15px; color: #475569">IFRN · em andamento (2026–2027)</p></li>
+<li style="background: #FFFFFF; border: 1px solid #E5EAF2; border-left: 4px solid #7C3AED; border-radius: 12px; padding: 14px 18px"><p style="margin: 0; font-weight: 600; color: #0F172A">Especialização em Ciência de Dados e Inteligência Artificial</p><p style="margin: 0; font-size: 15px; color: #475569">UNINTER · 2024</p></li>
+<li style="background: #FFFFFF; border: 1px solid #E5EAF2; border-left: 4px solid #EA580C; border-radius: 12px; padding: 14px 18px"><p style="margin: 0; font-weight: 600; color: #0F172A">Especialização em Estrutura e Gestão de Redes de Computadores</p><p style="margin: 0; font-size: 15px; color: #475569">UNINTER · 2025</p></li>
+</ul>
+</div>
+<div style="flex: 1 1 420px; min-width: 0">
+<p style="margin: 0 0 10px; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; color: #7C3AED">competências</p>
+<h2 style="margin: 0 0 28px; font-family: 'Space Grotesk', sans-serif; font-size: 32px; color: #0F172A">Ferramentas e tecnologias</h2>
+<p style="margin: 0 0 10px; font-size: 14px; font-weight: 600; color: #1E40AF">Dados e IA</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px">
+<span style="padding: 7px 14px; border-radius: 999px; background: #DBEAFE; color: #1E3A8A; font-size: 14px">Python</span>
+<span style="padding: 7px 14px; border-radius: 999px; background: #DBEAFE; color: #1E3A8A; font-size: 14px">Pandas</span>
+<span style="padding: 7px 14px; border-radius: 999px; background: #DBEAFE; color: #1E3A8A; font-size: 14px">NumPy</span>
+<span style="padding: 7px 14px; border-radius: 999px; background: #DBEAFE; color: #1E3A8A; font-size: 14px">SQL</span>
+<span style="padding: 7px 14px; border-radius: 999px; background: #DBEAFE; color: #1E3A8A; font-size: 14px">Power BI</span>
+<span style="padding: 7px 14px; border-radius: 999px; background: #DBEAFE; color: #1E3A8A; font-size: 14px">Machine Learning</span>
+<span style="padding: 7px 14px; border-radius: 999px; background: #DBEAFE; color: #1E3A8A; font-size: 14px">Estatística</span>
+<span style="padding: 7px 14px; border-radius: 999px; background: #DBEAFE; color: #1E3A8A; font-size: 14px">Web scraping e APIs</span>
+</div>
+<p style="margin: 0 0 10px; font-size: 14px; font-weight: 600; color: #9A3412">Infraestrutura</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px">
+<span style="padding: 7px 14px; border-radius: 999px; background: #FFEDD5; color: #9A3412; font-size: 14px">Linux</span>
+<span style="padding: 7px 14px; border-radius: 999px; background: #FFEDD5; color: #9A3412; font-size: 14px">Windows Server</span>
+<span style="padding: 7px 14px; border-radius: 999px; background: #FFEDD5; color: #9A3412; font-size: 14px">Active Directory</span>
+<span style="padding: 7px 14px; border-radius: 999px; background: #FFEDD5; color: #9A3412; font-size: 14px">Samba 4</span>
+<span style="padding: 7px 14px; border-radius: 999px; background: #FFEDD5; color: #9A3412; font-size: 14px">Zabbix</span>
+<span style="padding: 7px 14px; border-radius: 999px; background: #FFEDD5; color: #9A3412; font-size: 14px">Docker</span>
+<span style="padding: 7px 14px; border-radius: 999px; background: #FFEDD5; color: #9A3412; font-size: 14px">Ansible / AWX</span>
+<span style="padding: 7px 14px; border-radius: 999px; background: #FFEDD5; color: #9A3412; font-size: 14px">AWS</span>
+<span style="padding: 7px 14px; border-radius: 999px; background: #FFEDD5; color: #9A3412; font-size: 14px">VMware</span>
+<span style="padding: 7px 14px; border-radius: 999px; background: #FFEDD5; color: #9A3412; font-size: 14px">FortiGate</span>
+</div>
+</div>
+</section>
+
+<!-- CERTIFICAÇÕES -->
+<section id="certificacoes" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 88px">
+<p style="margin: 0 0 10px; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; color: #1D4ED8">certificações</p>
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 48px; margin-bottom: 32px">
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 32px; color: #0F172A">Certificações em destaque</h2>
+<a href="https://www.linkedin.com/in/joelsonferreira/details/certifications/" style="display: inline-flex; align-items: center; min-height: 44px; font-weight: 600">Ver todas no LinkedIn →</a>
+</div>
+<div class="jf-grid4" style="display: grid; gap: 20px">
+
+<div style="background: #FFFFFF; border: 1px solid #E5EAF2; border-top: 4px solid #1D4ED8; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; gap: 12px">
+<span style="width: 40px; height: 40px; border-radius: 12px; background: #DBEAFE; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D4ED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a4 4 0 0 1-.6-7.95A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"></path></svg></span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 19px; color: #0F172A">Cloud e AWS</h3>
+</div>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px">
+<li><p style="margin: 0; font-size: 15px; font-weight: 600; color: #0F172A">AWS Certified Solutions Architect – Associate (SAA-C02)</p><p style="margin: 0; font-size: 13px; color: #64748B">Amazon Web Services</p></li>
+<li><p style="margin: 0; font-size: 15px; font-weight: 600; color: #0F172A">AWS Certified Cloud Practitioner</p><p style="margin: 0; font-size: 13px; color: #64748B">Amazon Web Services</p></li>
+<li><p style="margin: 0; font-size: 15px; font-weight: 600; color: #0F172A">AWS Technical Professional</p><p style="margin: 0; font-size: 13px; color: #64748B">Amazon Web Services</p></li>
+<li><p style="margin: 0; font-size: 15px; font-weight: 600; color: #0F172A">AWS Cloud Economics</p><p style="margin: 0; font-size: 13px; color: #64748B">Amazon Web Services</p></li>
+<li><p style="margin: 0; font-size: 15px; font-weight: 600; color: #0F172A">Cloud Essentials+</p><p style="margin: 0; font-size: 13px; color: #64748B">Escola Superior de Redes</p></li>
+</ul>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #E5EAF2; border-top: 4px solid #EA580C; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; gap: 12px">
+<span style="width: 40px; height: 40px; border-radius: 12px; background: #FFEDD5; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C2410C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1.5"></rect><rect x="3" y="14" width="18" height="6" rx="1.5"></rect><path d="M7 7h.01M7 17h.01"></path></svg></span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 19px; color: #0F172A">Linux e infraestrutura</h3>
+</div>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px">
+<li><p style="margin: 0; font-size: 15px; font-weight: 600; color: #0F172A">Administração de Sistemas Linux</p><p style="margin: 0; font-size: 13px; color: #64748B">Escola Superior de Redes</p></li>
+<li><p style="margin: 0; font-size: 15px; font-weight: 600; color: #0F172A">Administração de Redes Linux</p><p style="margin: 0; font-size: 13px; color: #64748B">ITCURSOS</p></li>
+<li><p style="margin: 0; font-size: 15px; font-weight: 600; color: #0F172A">Gestão de containers com Docker</p><p style="margin: 0; font-size: 13px; color: #64748B">Escola Superior de Redes</p></li>
+<li><p style="margin: 0; font-size: 15px; font-weight: 600; color: #0F172A">Samba 4 · Active Directory e File Server no Linux</p></li>
+<li><p style="margin: 0; font-size: 15px; font-weight: 600; color: #0F172A">Zabbix · construindo um ambiente de monitoramento</p></li>
+</ul>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #E5EAF2; border-top: 4px solid #0D9488; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; gap: 12px">
+<span style="width: 40px; height: 40px; border-radius: 12px; background: #CCFBF1; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0F766E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"></path><path d="M9 12l2 2 4-4"></path></svg></span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 19px; color: #0F172A">Segurança</h3>
+</div>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px">
+<li><p style="margin: 0; font-size: 15px; font-weight: 600; color: #0F172A">Fundamentos de Segurança da Informação</p><p style="margin: 0; font-size: 13px; color: #64748B">Escola Superior de Redes</p></li>
+<li><p style="margin: 0; font-size: 15px; font-weight: 600; color: #0F172A">FortiGate 301 · Multi-Threat Security Systems II</p><p style="margin: 0; font-size: 13px; color: #64748B">Fortinet</p></li>
+<li><p style="margin: 0; font-size: 15px; font-weight: 600; color: #0F172A">FortiGate 201 · Multi-Threat Security Systems I</p><p style="margin: 0; font-size: 13px; color: #64748B">Fortinet</p></li>
+</ul>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #E5EAF2; border-top: 4px solid #7C3AED; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; gap: 12px">
+<span style="width: 40px; height: 40px; border-radius: 12px; background: #EDE9FE; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="2.5"></circle><circle cx="18" cy="6" r="2.5"></circle><circle cx="12" cy="18" r="2.5"></circle><path d="M8 7.5l3 8M16 7.5l-3 8M8.5 6h7"></path></svg></span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 19px; color: #0F172A">Inteligência Artificial</h3>
+</div>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px">
+<li><p style="margin: 0; font-size: 15px; font-weight: 600; color: #0F172A">Inteligência Artificial Impressionador</p><p style="margin: 0; font-size: 13px; color: #64748B">Hashtag Treinamentos</p></li>
+</ul>
+</div>
+
+</div>
+<div aria-hidden="true" style="height: 4px; margin-top: 20px; border-radius: 2px; background-image: linear-gradient(90deg, #EA580C 0 12px, transparent 12px 24px); background-size: 24px 4px; animation: jf-dash 0.8s linear infinite; opacity: 0.6"></div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 96px">
+<div style="border-radius: 28px; background: #1D4ED8; color: #FFFFFF; padding: clamp(32px, 6vw, 72px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px; position: relative; overflow: hidden">
+<svg width="360" height="200" viewBox="0 0 360 200" aria-hidden="true" style="position: absolute; right: -40px; bottom: -30px; opacity: 0.25">
+<line x1="40" y1="160" x2="140" y2="80" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="6 6" style="animation: jf-flow 1.2s linear infinite"></line>
+<line x1="140" y1="80" x2="240" y2="140" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="6 6" style="animation: jf-flow 1.2s linear infinite"></line>
+<line x1="240" y1="140" x2="330" y2="40" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="6 6" style="animation: jf-flow 1.2s linear infinite"></line>
+<line x1="140" y1="80" x2="330" y2="40" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="6 6" style="animation: jf-flow 1.2s linear infinite"></line>
+<circle cx="40" cy="160" r="8" fill="#FFFFFF"></circle><circle cx="140" cy="80" r="10" fill="#FFFFFF"></circle><circle cx="240" cy="140" r="8" fill="#FFFFFF"></circle><circle cx="330" cy="40" r="10" fill="#FFFFFF"></circle>
+</svg>
+<div style="flex: 999 1 460px; min-width: 0; position: relative">
+<p style="margin: 0 0 10px; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; color: #BFDBFE">contato</p>
+<h2 style="margin: 0 0 16px; font-family: 'Space Grotesk', sans-serif; font-size: clamp(32px, 4vw, 46px); line-height: 1.1; color: #FFFFFF">Vamos conversar sobre os seus dados?</h2>
+<p style="margin: 0; max-width: 540px; color: #DBEAFE">Aberto a oportunidades na área de dados e IA e a projetos de consultoria. Respondo por e-mail ou WhatsApp.</p>
+</div>
+<div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 12px; position: relative">
+<a class="jf-card" href="https://wa.me/5584998170572?text=Ol%C3%A1%2C%20Joelson%21%20Encontrei%20seu%20contato%20pelo%20site%20joelsonferreira.com.br%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os." target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; border-radius: 999px; border: 1px solid #93C5FD; background: #25D366; color: #052E16; font-weight: 600; text-decoration: none"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.5 7.8L3 21l1.2-4.5A9 9 0 1 1 21 12z"></path></svg>Chamar no WhatsApp</a>
+<div style="position: relative">
+<button class="jf-card" type="button" id="jf-copy" title="Clique para copiar o e-mail" style="width: 100%; padding: 0 16px; font: inherit; background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; border-radius: 999px; border: 1px solid #93C5FD; color: #FFFFFF; font-weight: 500; text-decoration: none"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>joelson.sf@outlook.com</button>
+<span id="jf-toast" role="status" hidden style="position: absolute; left: 50%; transform: translateX(-50%); bottom: calc(100% + 10px); padding: 8px 14px; border-radius: 10px; background: #0F172A; color: #FFFFFF; font-size: 13px; font-weight: 600; white-space: nowrap; box-shadow: 0 8px 20px rgba(15,23,42,0.25)">Endereço de e-mail copiado</span>
+</div>
+<div style="display: flex; justify-content: center; gap: 24px; padding-top: 8px; font-size: 15px">
+<a href="https://www.linkedin.com/in/joelsonferreira/" style="color: #FFFFFF">LinkedIn</a>
+<a href="https://github.com/Joelson-Ferreira" style="color: #FFFFFF">GitHub</a>
+<a href="https://www.instagram.com/joelsonferreirati/" style="color: #FFFFFF">Instagram</a>
+</div>
+</div>
+</div>
+</section>
+
+<footer style="background: #FFFFFF; border-top: 1px solid #E5EAF2">
+<div style="max-width: 1200px; margin: 0 auto; padding: 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px; color: #64748B">
+<span>© 2026 Joelson Ferreira · Natal, RN</span>
+<span style="font-family: 'JetBrains Mono', monospace">joelsonferreira.com.br</span>
+</div>
+</footer>
+
+</div>
+
+<script>
+(function () {
+  // Gráfico de tráfego (demonstração com dados simulados)
+  var N = 40, t = 0, vals = [];
+  function gen(i) {
+    var v = 48 + 16 * Math.sin(i / 4) + 9 * Math.sin(i / 1.7) + (Math.random() * 10 - 5);
+    if (i % 17 === 0) v = 96 + Math.random() * 8;
+    return Math.max(10, Math.min(108, v));
+  }
+  for (; t < N; t++) vals.push(gen(t));
+  var line = document.getElementById('jf-line'), area = document.getElementById('jf-area'),
+      anom = document.getElementById('jf-anom'), pts = document.querySelectorAll('.jf-anom-pt'),
+      status = document.getElementById('jf-status'), statusText = document.getElementById('jf-status-text'),
+      mbps = document.getElementById('jf-mbps');
+  function draw() {
+    var step = 320 / (N - 1), p = [], ai = -1;
+    for (var i = 0; i < N; i++) {
+      p.push((i * step).toFixed(1) + ',' + (118 - vals[i]).toFixed(1));
+      if (vals[i] > 84) ai = i;
+    }
+    line.setAttribute('points', p.join(' '));
+    area.setAttribute('d', 'M0,120 L' + p.join(' L') + ' L320,120 Z');
+    if (ai >= 0) {
+      anom.style.display = '';
+      for (var k = 0; k < pts.length; k++) {
+        pts[k].setAttribute('cx', (ai * step).toFixed(1));
+        pts[k].setAttribute('cy', (118 - vals[ai]).toFixed(1));
+      }
+    } else { anom.style.display = 'none'; }
+    var recent = ai >= N - 6;
+    statusText.textContent = recent ? 'Anomalia detectada' : 'Normal';
+    status.style.color = recent ? '#C2410C' : '#0F766E';
+    mbps.textContent = Math.round(vals[N - 1] * 9.4);
+  }
+  draw();
+  setInterval(function () { vals.shift(); vals.push(gen(t++)); draw(); }, 1000);
+
+  // Copiar e-mail
+  var btn = document.getElementById('jf-copy'), toast = document.getElementById('jf-toast'), timer;
+  btn.addEventListener('click', function () {
+    var email = 'joelson.sf@outlook.com';
+    function ok() { toast.hidden = false; clearTimeout(timer); timer = setTimeout(function () { toast.hidden = true; }, 2200); }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(email).then(ok, function () {});
+    }
+  });
+})();
+</script>
+</body>
+</html>
